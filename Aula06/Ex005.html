@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       var n1 = Number(window.prompt('Quanto você ganhou no primeiro mês?'))
+       var n2 = Number(window.prompt('Qaunto você ganhou no segundo mês?'))
+       s = n1+n2
+       dolar = s * 0.18
+       euro = s * 0.15
+       document.write(`A soma dos dois meses é igual a ${s.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})} </br>`)
+       document.write(`Em dolar seria ${dolar.toLocaleString('pt-BR', {style: 'currency', currency:'USD'})}</br>`)
+       document.write(`Em euro seria ${euro.toLocaleString('pt-BR', {style: 'currency', currency:'EUR'})}`)
+
+    </script>
+</body>
+</html>
